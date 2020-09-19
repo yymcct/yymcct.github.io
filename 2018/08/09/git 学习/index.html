@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.9.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="CodeWeng blog"><title>git学习 | CodeWeng blog</title><link rel="stylesheet" type="text/css" href="/css/normalize.css"><link rel="stylesheet" type="text/css" href="/css/highlight.css"><link rel="stylesheet" type="text/css" href="/css/font.css"><link rel="stylesheet" type="text/css" href="/css/noise.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/font-awesome/4.5.0/css/font-awesome.min.css"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"></head><body><article class="wrapper"><div class="post-main"><div class="nav"><nav class="container"><a class="sidebar-nav-item active" href="/">Home</a><a class="sidebar-nav-item" href="/archives">Archives</a></nav><div class="container post-meta"><div class="post-time">2018-08-09</div></div></div><div class="container post-header"><h1>git学习</h1></div><div class="container post-content"><p>不掌握github,怎么好意思说自己是程序员..</p>
+<h2 id="分支branch"><a href="#分支branch" class="headerlink" title="分支branch"></a>分支<code>branch</code></h2><p>我理解的git分支就是帮我们复制当前所在工作目录的文件夹这一操作, 和我们普通的<code>ctrl+c ctrl+v</code>操作一样,无特殊之处,如果非要说特殊,就特殊在git可以记录我们文件的所有历史版本,所以它可以选定任意历史版本的文件夹进行复制. </p>
+<h3 id="git-branch-查看分支"><a href="#git-branch-查看分支" class="headerlink" title="git branch 查看分支"></a><code>git branch</code> 查看分支</h3><p>如果我们假象分支就是复制文件这个操作,那么要查看复制了多少个文件就用这个命令<code>git branch</code>. 因为Linux的思想是一切介文件,所以它这个复制动作其实就是新建一个文件,这个文件里记录了当前的目录及目录里面的文件. <code>git branch</code>就是列出所有<em>复制</em>这一类型的文件</p>
+<h3 id="git-branch-branch-name-新建分支"><a href="#git-branch-branch-name-新建分支" class="headerlink" title="git branch [branch_name] 新建分支"></a><code>git branch [branch_name]</code> 新建分支</h3><p>我们自己<code>ctrl+c ctrl+v</code>一样.让git帮我们把当前所在的分支文件复制一份. </p>
+<p>通常情况下当前目录就是我们正在开发的目录,是最新的. 如果要为两个月前的某个版本进行<em>复制</em>该如何操作呢?看下个命令 checkout</p>
+<h3 id="git-checkout-branch-name-切换分支"><a href="#git-checkout-branch-name-切换分支" class="headerlink" title="git checkout [branch_name]切换分支"></a><code>git checkout [branch_name]</code>切换分支</h3><p><code>checkout</code>类似于我们用<code>cd</code>命令切换文件夹差不多, 不同的是:它切换的是我们<code>commit</code>版本的文件夹. </p>
+<p>回答上个问题:我们要分两步:</p>
+<ol>
+<li>checkout 到两个月前提交的那个版本下</li>
+<li>执行 git branch 命令</li>
+</ol>
+<h3 id="git-branch-d-branch-name-删除分支"><a href="#git-branch-d-branch-name-删除分支" class="headerlink" title="git branch -d [branch_name]删除分支"></a><code>git branch -d [branch_name]</code>删除分支</h3><p>新建分支一般都要合并.</p>
+<h3 id="分支小结"><a href="#分支小结" class="headerlink" title="分支小结"></a>分支小结</h3><ul>
+<li>记住三个指令: 新建, 删除, 切换</li>
+</ul>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><blockquote>
+<p> <a href="https://github.com/doggy8088/Learn-Git-in-30-days" target="_blank" rel="noopener">30 天精通 Git 版本控管–Will 保哥</a></p>
+</blockquote>
+</div></div><div class="post-main post-comment"></div></article><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.css"><script src="//cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script><script src="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.pack.js"></script><script>$(document).ready(function() {
+  $(".fancybox").fancybox();
+});
+</script></body></html>
